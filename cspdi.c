@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <stdlib.h>
 
 void	ft_c(const char *str, int *final_count)
 {
