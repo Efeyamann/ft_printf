@@ -6,16 +6,16 @@
 /*   By: esir <esir@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 20:33:25 by esir              #+#    #+#             */
-/*   Updated: 2025/01/06 09:13:56 by esir             ###   ########.fr       */
+/*   Updated: 2025/01/25 08:45:46 by esir             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include <stdlib.h>
 
-void	ft_c(const char *str, int *final_count)
+void	ft_c(const char str, int *final_count)
 {
-	write(1, str, 1);
+	write(1, &str, 1);
 	(*final_count) += 1;
 }
 
@@ -30,14 +30,11 @@ void	ft_s(const char *str, int *final_count)
 		*final_count += 6;
 		return ;
 	}
-	else
+	while (str[a])
 	{
-		while (str[a])
-		{
-			write(1, &str[a], 1);
-			a++;
-			(*final_count)++;
-		}
+		write(1, &str[a], 1);
+		a++;
+		(*final_count)++;
 	}
 }
 

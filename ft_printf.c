@@ -6,7 +6,7 @@
 /*   By: esir <esir@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 13:03:42 by esir              #+#    #+#             */
-/*   Updated: 2025/01/06 09:02:18 by esir             ###   ########.fr       */
+/*   Updated: 2025/01/25 08:46:16 by esir             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	formats(char type, va_list args, int *final_count)
 	if (type == 'c')
 	{
 		c = (char)va_arg(args, int);
-		ft_c(&c, final_count);
+		ft_c(c, final_count);
 	}
 	else if (type == 's')
 		ft_s(va_arg(args, char *), final_count);

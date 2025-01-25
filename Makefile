@@ -12,7 +12,7 @@ RM = rm -f
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar r $(NAME) $(OBJS)
+	ar rcs $(NAME) $(OBJS)
 
 clean:
 	$(RM) $(OBJS)
