@@ -2,7 +2,7 @@
 
 The ft_printf project is part of the 42 curriculum and involves recreating the standard printf function with similar functionality, handling various format specifiers and conversions.
 
-Features:\n
+Features:
 Supports the following format specifiers:
 %c → Character
 %s → String
